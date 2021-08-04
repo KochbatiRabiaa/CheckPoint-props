@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React  from 'react';
+import Profile from "./profile/Profile"
+import Photo1 from "./profile/photo1.jpg"
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Profile fullName="Kochbati Rabiaa"
+        bio="A master degree in analytical chemistry from the University of Tunis: Faculty of Sciences of Tunis.
+      A wife and a mother of a beautiful twin"
+       profession=" chemistry teacher"
+       children={Photo1} / >
+      
     </div>
   );
 }
